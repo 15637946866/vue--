@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div class="col"> 
+
+    </div>
      <navlist></navlist>
     
      <router-view></router-view>
@@ -17,7 +20,11 @@ export default {
 </script>
 
 
-<style>
+<style lang="less" scoped>
 #app {
+  
 }
-</style>
+</style>>
+
+
+

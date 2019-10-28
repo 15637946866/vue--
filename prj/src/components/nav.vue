@@ -22,14 +22,14 @@
     </router-link>
   </div>
 </template>
-<style scoped>
+<style lang="less" scoped>
 .nav {
   position: fixed;
   z-index: 99;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 100px;
   display: flex;
  background-color: #fff;
 }
@@ -39,9 +39,12 @@
     justify-content: center;
     align-items: center;
     flex: 1;
-  /* height: 50px;
-  line-height: 50px;
-  text-align: center; */
+    /* height: 50px;
+    line-height: 50px;
+    text-align: center; */
+    i{
+        font-size: 50px
+    }
   
 }
 .router-link-active{
