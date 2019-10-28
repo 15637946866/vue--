@@ -1,15 +1,15 @@
 <template>
   <div class="nav">
     <router-link tag="li" to="/Home">
-      <i class="iconfont icon-yemian-copy-copy-copy-copy"></i>
+      <i class="iconfont icon-shouye"></i>
       首页
     </router-link>
     <router-link tag="li" to="/sort">
-     <i class="iconfont icon-fenlei1"></i>
+     <i class="iconfont icon-leimupinleifenleileibie"></i>
       分类
     </router-link>
     <router-link tag="li" to="/search">
-     <i class="iconfont icon-bao"></i>
+     <i class="iconfont icon-sousuo"></i>
       搜索
     </router-link>
     <router-link tag="li" to="/car">
@@ -17,7 +17,7 @@
       购物车
     </router-link>
     <router-link tag="li" to="/My">
-    <i class="iconfont icon-home"></i>
+    <i class="iconfont icon-wode"></i>
       我的
     </router-link>
   </div>
