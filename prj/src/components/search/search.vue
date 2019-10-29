@@ -2,11 +2,11 @@
     <div>
      <button @click="selectOne"></button>
      {{con}}
-      <button @click="selectTwo"></button>
+    
     </div>
 </template>
 <script>
-import {getjiu,getbanner} from "../../api/searchaxios.js";
+import {getjiu} from "../../api/searchaxios.js";
 export default {
   data(){
     return{
@@ -18,10 +18,7 @@ export default {
      window.console.log('11')
       this.con=await getjiu() 
     },
-    async selectTwo() {
-     window.console.log('11')
-      this.con=await getbanner() 
-    },
+ 
 }
 }
 </script>
