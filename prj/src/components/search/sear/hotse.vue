@@ -1,19 +1,11 @@
 <template>
     <div>
 
-      <heade></heade>
-     
     </div>
 </template>
 <script>
-
-import heade from './sear/header.vue';
 export default {
-
-  components:{
-    heade
-  }
-
+    
 }
 </script>
 <style lang="less" scoped>
