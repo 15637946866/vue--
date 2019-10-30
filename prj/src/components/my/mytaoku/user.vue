@@ -6,44 +6,17 @@ npm<template>
           <i class="iconfont icon-navicon-ztdzsz"></i>
           <span>收货地址管理</span>
         </h3>
-        <h5><i class="iconfont icon-pc-you"></i></h5>
-        </a>
+        <h5>
+          <i class="iconfont icon-pc-you"></i>
+        </h5>
+      </a>
     </div>
 
-
-
-
-      <div class="three-two">
+    <div class="three-two">
       <a href="#" class="top-a">
         <h3>
-          <i class="iconfont icon-shezhi1"></i>
+          <i class="iconfont icon-shezhi2"></i>
           <span>用户设置</span>
-        </h3>
-        <h5>
-          <i class="iconfont icon-pc-you"></i>
-        </h5>
-      </a>
-    </div>
-
-     <div class="three-three">
-      <a href="#" class="top-a">
-        <h3>
-          <i class="iconfont icon-yaoqingfanli"></i>
-          <span>邀请返利</span>
-        </h3>
-        <h5>
-          <i class="iconfont icon-pc-you"></i>
-        </h5>
-      </a>
-    </div>
-
-
-
-     <div class="three-four">
-      <a href="#" class="top-a">
-        <h3>
-          <i class="iconfont icon-bangzhuzhongxin"></i>
-          <span>帮助</span>
         </h3>
         <h5>
           <i class="iconfont icon-pc-you"></i>
@@ -56,9 +29,11 @@ npm<template>
 .cen-three {
   margin-top: 20px;
   width: 100%;
-  height: 160px;
+  height: 128px;
   background-color: #fff;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 .three-one {
   width: 100%;
@@ -67,132 +42,67 @@ npm<template>
 }
 .top-a {
   display: block;
-  width: 666px;
+  width: 700px;
   height: 40px;
   margin: 0 auto;
   margin-top: 10px;
 }
 h3 {
-  width: 190px;
+  width: 400px;
   float: left;
-  .icon-dingdan {
+  padding-left: 7px;
+  .icon-navicon-ztdzsz {
     font-size: 30px;
     color: skyblue;
   }
   span {
     font-size: 30px;
+    margin-left: 15px;
     color: black;
   }
 }
 h5 {
-  width: 200px;
+  width: 45px;
   float: right;
+  margin-top: 1.5px;
+  padding-top: 1px;
   .icon-pc-you {
     font-size: 16px;
   }
 }
 
-.three-two{
+.three-two {
   width: 100%;
   height: 60px;
-  border-bottom: solid 1px #eee;
 }
 .top-a {
   display: block;
-  width: 666px;
+  width: 700px;
   height: 40px;
   margin: 0 auto;
   margin-top: 10px;
 }
 h3 {
-  width: 190px;
+  width: 400px;
   float: left;
-  .icon-dingdan {
+  padding-left: 7px;
+  .icon-shezhi2 {
     font-size: 30px;
     color: skyblue;
   }
   span {
     font-size: 30px;
+    margin-left: 17px;
     color: black;
   }
 }
 h5 {
-  width: 200px;
+  width: 45px;
   float: right;
+  margin-top: 1.5px;
+  padding-top: 1px;
   .icon-pc-you {
     font-size: 16px;
   }
 }
-
-
-
-.three-three{
-  width: 100%;
-  height: 60px;
-  margin-top: 20px;
-  border-bottom: solid 1px #eee;
-}
-.top-a {
-  display: block;
-  width: 666px;
-  height: 40px;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-h3 {
-  width: 190px;
-  float: left;
-  .icon-dingdan {
-    font-size: 30px;
-    color: skyblue;
-  }
-  span {
-    font-size: 30px;
-    color: black;
-  }
-}
-h5 {
-  width: 200px;
-  float: right;
-  .icon-pc-you {
-    font-size: 16px;
-  }
-}
-
-
-
-.three-four{
-  width: 100%;
-  height: 60px;
-  margin-top: 20px;
-  border-bottom: solid 1px #eee;
-}
-.top-a {
-  display: block;
-  width: 666px;
-  height: 40px;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-h3 {
-  width: 190px;
-  float: left;
-  .icon-dingdan {
-    font-size: 30px;
-    color: skyblue;
-  }
-  span {
-    font-size: 30px;
-    color: black;
-  }
-}
-h5 {
-  width: 200px;
-  float: right;
-  .icon-pc-you {
-    font-size: 16px;
-  }
-}
-
-
 </style>

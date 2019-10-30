@@ -55,6 +55,8 @@
   height: 180px;
   background-color: #fff;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 .one-top {
   width: 100%;
@@ -63,7 +65,7 @@
 }
 .top-a {
   display: block;
-  width: 666px;
+  width: 705px;
   height: 40px;
   margin: 0 auto;
   margin-top: 10px;
@@ -77,17 +79,21 @@ h3 {
   }
   span {
     font-size: 30px;
+    margin-left: 8px;
     color: black;
   }
 }
 h5 {
   width: 200px;
   float: right;
+  margin-top: 1.5px;
+  padding-top: 1px;
   span {
     font-size: 16px;
   }
   .icon-pc-you {
     font-size: 16px;
+    margin-left: 6px;
   }
 }
 
