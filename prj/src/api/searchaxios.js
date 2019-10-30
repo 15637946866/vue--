@@ -1,6 +1,6 @@
 import axios from './common'
 
-export function getjiu(){
-    return axios.get('search/jiu')
+export function getjiu(con){
+    return axios.get('search/jiu?id='+con)
 }
 

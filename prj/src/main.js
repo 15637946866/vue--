@@ -7,7 +7,6 @@ import 'mint-ui/lib/style.css'
 import 'lib-flexible'
 import './style/index.css'
 import './style/txt.css'
-import './style/home.css'
 import 'swiper/dist/css/swiper.css'
 
 Vue.use(VueAwesomeSwiper)
