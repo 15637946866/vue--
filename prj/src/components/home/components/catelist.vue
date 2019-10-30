@@ -1,7 +1,7 @@
 <template>
   <div class="catelist">
     <ul>
-      <li v-for="(item, index) in cateList" :key="index">
+      <li class="homeli" v-for="(item, index) in cateList" :key="index">
         <img :src="item.img" alt />
         <p>{{item.txt}}</p>
       </li>
@@ -27,7 +27,7 @@ export default {
 ul {
   display: flex;
   flex-wrap: wrap;
-  li {
+  .homeli {
     display: flex;
     flex-direction: column;
     justify-content: center;
