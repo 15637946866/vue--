@@ -6,8 +6,10 @@
         <div>限量抢购
             <span>更多</span>
         </div>
-        
     </div>
+    <ul>
+        
+    </ul>
 </div>
 </template>
 <style lang="less" scoped>
