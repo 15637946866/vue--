@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router/router.js'
+import store from './store/store.js'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
@@ -15,4 +16,5 @@ Vue.use(MintUI)
 new Vue({
   render: h => h(App),
   router,
+  store
 }).$mount('#app')

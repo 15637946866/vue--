@@ -6,6 +6,7 @@ import my from '../components/my/my.vue'
 import car from '../components/car/car.vue'
 import search from '../components/search/search.vue'
 import jiu from '../components/search/sear/jiu.vue'
+import result from '../components/search/sear/result.vue'
 Vue.use(VueRouter)
  let routes=[
     {
@@ -41,9 +42,13 @@ Vue.use(VueRouter)
         },
         children: [{
             path: 'jiu',
-            component: jiu
-        },   
-        ]
+            component: jiu,
+            children: [{
+                path: 'result',
+                component: result,
+    
+            }]
+        }]
     },
     {
         path:'/car',
