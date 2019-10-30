@@ -13,6 +13,7 @@
 
 
     <user3s></user3s>
+    <foot></foot>
   </div>
 </template>
 <script>
@@ -22,6 +23,7 @@ import est from "./mytaoku/myestate.vue";
 import users from "./mytaoku/user.vue";
 import user2s from "./mytaoku/user2.vue";
 import user3s from "./mytaoku/user3.vue";
+import foot from "./mytaoku/footer.vue";
 export default {
   components: {
     haeders,
@@ -29,13 +31,15 @@ export default {
     est,
     users,
     user2s,
-    user3s
+    user3s,
+    foot
+
   }
 };
 </script>
 <style lang="less" scoped>
   .aaa{
-    height: 5000px;
+    height: auto;
     background:  #f5f5f5 ;
   }
 </style>
