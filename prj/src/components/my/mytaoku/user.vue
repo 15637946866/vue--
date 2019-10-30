@@ -1,0 +1,198 @@
+npm<template>
+  <div class="cen-three">
+    <div class="three-one">
+      <a href="#" class="top-a">
+        <h3>
+          <i class="iconfont icon-navicon-ztdzsz"></i>
+          <span>收货地址管理</span>
+        </h3>
+        <h5><i class="iconfont icon-pc-you"></i></h5>
+        </a>
+    </div>
+
+
+
+
+      <div class="three-two">
+      <a href="#" class="top-a">
+        <h3>
+          <i class="iconfont icon-shezhi1"></i>
+          <span>用户设置</span>
+        </h3>
+        <h5>
+          <i class="iconfont icon-pc-you"></i>
+        </h5>
+      </a>
+    </div>
+
+     <div class="three-three">
+      <a href="#" class="top-a">
+        <h3>
+          <i class="iconfont icon-yaoqingfanli"></i>
+          <span>邀请返利</span>
+        </h3>
+        <h5>
+          <i class="iconfont icon-pc-you"></i>
+        </h5>
+      </a>
+    </div>
+
+
+
+     <div class="three-four">
+      <a href="#" class="top-a">
+        <h3>
+          <i class="iconfont icon-bangzhuzhongxin"></i>
+          <span>帮助</span>
+        </h3>
+        <h5>
+          <i class="iconfont icon-pc-you"></i>
+        </h5>
+      </a>
+    </div>
+  </div>
+</template>
+<style lang="less" scoped>
+.cen-three {
+  margin-top: 20px;
+  width: 100%;
+  height: 160px;
+  background-color: #fff;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+.three-one {
+  width: 100%;
+  height: 60px;
+  border-bottom: solid 1px #eee;
+}
+.top-a {
+  display: block;
+  width: 666px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+h3 {
+  width: 190px;
+  float: left;
+  .icon-dingdan {
+    font-size: 30px;
+    color: skyblue;
+  }
+  span {
+    font-size: 30px;
+    color: black;
+  }
+}
+h5 {
+  width: 200px;
+  float: right;
+  .icon-pc-you {
+    font-size: 16px;
+  }
+}
+
+.three-two{
+  width: 100%;
+  height: 60px;
+  border-bottom: solid 1px #eee;
+}
+.top-a {
+  display: block;
+  width: 666px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+h3 {
+  width: 190px;
+  float: left;
+  .icon-dingdan {
+    font-size: 30px;
+    color: skyblue;
+  }
+  span {
+    font-size: 30px;
+    color: black;
+  }
+}
+h5 {
+  width: 200px;
+  float: right;
+  .icon-pc-you {
+    font-size: 16px;
+  }
+}
+
+
+
+.three-three{
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  border-bottom: solid 1px #eee;
+}
+.top-a {
+  display: block;
+  width: 666px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+h3 {
+  width: 190px;
+  float: left;
+  .icon-dingdan {
+    font-size: 30px;
+    color: skyblue;
+  }
+  span {
+    font-size: 30px;
+    color: black;
+  }
+}
+h5 {
+  width: 200px;
+  float: right;
+  .icon-pc-you {
+    font-size: 16px;
+  }
+}
+
+
+
+.three-four{
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  border-bottom: solid 1px #eee;
+}
+.top-a {
+  display: block;
+  width: 666px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+h3 {
+  width: 190px;
+  float: left;
+  .icon-dingdan {
+    font-size: 30px;
+    color: skyblue;
+  }
+  span {
+    font-size: 30px;
+    color: black;
+  }
+}
+h5 {
+  width: 200px;
+  float: right;
+  .icon-pc-you {
+    font-size: 16px;
+  }
+}
+
+
+</style>
