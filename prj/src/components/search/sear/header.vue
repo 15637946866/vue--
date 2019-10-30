@@ -1,12 +1,15 @@
 <template>
   <div class="he">
+      <router-link  tag="li" to='/search'>
     <img src="../../../assets/箭头.png" alt="">
-      
+      </router-link>
       <div class="sear">
           <i class="iconfont icon-sousuo"></i>
            <input type="text" ref="inp" placeholder="请输入搜索关键字">
       </div>
-    <mt-button type="default" @click="searchData">搜索</mt-button>
+ 
+     <router-link class="btn" tag="li" to='/search/jiu' @click.native="searchData">搜索</router-link>
+      <router-view></router-view>
   </div>
 </template>
 <script>
@@ -14,18 +17,30 @@ import Vue from "vue";
 import {getjiu} from "../../../api/searchaxios.js";
 import { Button } from "mint-ui";
 Vue.component(Button.name, Button);
+
 export default {
   data() {
     return {
-      con:[]
+      con:[],
+      searval:'',
     };
   },
   methods:{
-     async searchData(){
-         
-         this.con=await getjiu() 
-         window.console.log(this.$refs.inp.value)
+     async searchData(){  
+         this.searval=this.$refs.inp.value;
+         this.con=await getjiu(this.searval); 
+         window.console.log(this.searval);
+        this.$router.push({
+          path: '/search/jiu',
+          query: {
+            mallCode: this.con
+          }
+        });
+
       }
+  },
+  components:{
+
   }
 };
 </script>
@@ -33,7 +48,7 @@ export default {
 .he {
   width: 100%;
   height: 88px;
-    display: flex;
+  display: flex;
     
   img {
     width: 34px;
@@ -55,10 +70,16 @@ export default {
          margin:10px 10px;
       }
   }
-  .mint-button{
-      height: 70px;
-      margin-top: 10px;
-      font-size: 28px
+  .btn{
+      border: 1px solid black;
+      width: 80px;
+      height: 66px;
+      line-height: 66px;
+      border-radius: 10px; 
+      text-align: center;
+      margin:10px 10px;
+      background-color: gainsboro;
   }
+  
 }
 </style>

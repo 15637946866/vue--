@@ -4,9 +4,9 @@
       <heade></heade>
       <!-- 内容区........... -->
        <div class="content">
-          <div class="wrapper" ref="content" >
+          <div class="wrapper" >
               <ul>
-                  <li ref="myli" v-for="(item,index) in allcates" :key="index">{{item.title}}</li>
+                  <li ref="myli" @click="seIectOne(index,item.id)" :class="{active: currentIndex==index}"  v-for="(item,index) in allcates" :key="index">{{item.title}}</li>
               </ul>
           </div>
        </div>  
@@ -22,12 +22,16 @@ export default {
     return{
       allcates:[],
       bs1:null,
+      currentIndex:0,
     }
   },
   components:{
     heade,
   },
   methods:{
+    async seIectOne(index){
+      this.currentIndex=index
+    }
 
   },
   created(){
@@ -46,17 +50,18 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.active{
+  color: #e9232c;
+  background: #EFF4FA
+}
 .cate{
   height: 1334px;
- 
-}
-.content{
-    height:1228px;
+  .content{
+    height:1128px;
     display:flex;
   }
-   
   .wrapper{
-    height: 100%;
+    height: 1128px;
     ul{
       li{
         width: 140px;
@@ -67,5 +72,6 @@ export default {
       }
     }
   }
+}
 
 </style>

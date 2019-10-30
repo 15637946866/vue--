@@ -5,12 +5,12 @@
 
       <div class="search">
         <!-- 搜索 -->
-        <i class="iconfont icon-fangdajing"></i>
+        <i class="iconfont icon-sousuo"></i>
         <input placeholder="请输入关键字" type="text" />
       </div>
       <div class="news">
         <!-- 消息 -->
-        <i class="iconfont icon-xiaoxi1"></i>
+        <i class="iconfont icon-xiaoxi"></i>
         <span>消息</span>
       </div>
     </div>
@@ -23,7 +23,7 @@ export default {};
 .header {
   background: tomato;
   display: flex;
-  float: top;
+  // float: top;
   img {
     height: 71px;
     width: 150px;
@@ -38,7 +38,7 @@ export default {};
     align-items: center;
     background: #fff;
     i {
-      font-size: 50px;
+      font-size: 46px;
     }
     input {
       height: 70px;
