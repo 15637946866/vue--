@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var dangRouter = require('./routes/dangdang');
 var search = require('./routes/search');
+var sort = require('./routes/sort');
 
 var app = express();
 app.use(cors());
@@ -26,6 +27,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/dang', dangRouter);
 app.use('/search', search);
+app.use('/sortlist', sort);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
