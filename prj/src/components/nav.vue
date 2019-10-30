@@ -2,23 +2,23 @@
   <div class="nav">
     <router-link tag="li" to="/Home">
       <i class="iconfont icon-shouye"></i>
-      首页
+      <span>首页</span>
     </router-link>
     <router-link tag="li" to="/sort">
      <i class="iconfont icon-leimupinleifenleileibie"></i>
-      分类
+      <span>分类</span>
     </router-link>
     <router-link tag="li" to="/search">
      <i class="iconfont icon-sousuo"></i>
-      搜索
+      <span>搜索</span>
     </router-link>
     <router-link tag="li" to="/car">
     <i class="iconfont icon-gouwuche1"></i>
-      购物车
+      <span>购物车</span>
     </router-link>
     <router-link tag="li" to="/My">
     <i class="iconfont icon-wode"></i>
-      我的
+      <span>我的</span>
     </router-link>
   </div>
 </template>

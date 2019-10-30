@@ -5,6 +5,7 @@ import sort from '../components/sort/sort.vue'
 import my from '../components/my/my.vue'
 import car from '../components/car/car.vue'
 import search from '../components/search/search.vue'
+import jiu from '../components/search/sear/jiu.vue'
 Vue.use(VueRouter)
  let routes=[
     {
@@ -37,7 +38,12 @@ Vue.use(VueRouter)
         component:search,
         meta:{
             title:'搜索'
-        }
+        },
+        children: [{
+            path: 'jiu',
+            component: jiu
+        },   
+        ]
     },
     {
         path:'/car',

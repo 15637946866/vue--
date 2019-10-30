@@ -1,8 +1,9 @@
 <template>
     <div class="hotse">
-        <h1>热门搜索</h1>
+        <h1>历史记录</h1>
         <mt-button type="default">无线冲</mt-button>
         <mt-button type="default">登山表</mt-button>
+        <button class="btn" >清除历史记录</button>
     </div>
 </template>
 <script>
@@ -16,11 +17,11 @@ export default {
 <style lang="less" scoped>
 .hotse{
     width: 100%;
-    height: 200px;
+    height: 300px;
     background-color: #f5f5f5;
      overflow: hidden;
     h1{
-        font-size: 40px;
+        font-size: 30px;
         margin: 20px 50px;
         font-weight: normal;
     }
@@ -30,6 +31,11 @@ export default {
       font-size: 28px;
       margin-left: 40px;
       border-radius: 30px;
+  }
+  .btn{
+      position: absolute;
+      left: 280px;
+      top: 500px;
   }
 }
 </style>
