@@ -1,0 +1,26 @@
+import Vuex from 'vuex'
+import Vue from 'vue'
+Vue.use(Vuex)
+var store=new Vuex.Store({
+    //1.state 数据模型
+    state:{
+        count:[],
+        cone:'',
+        data:null
+    },
+       //mutations的函数不能加异步代码，函数
+    mutations:{
+        add:(state,n)=>{
+            state.count.push(n)
+            state.cone=n
+        },
+        sub:(state,n)=>{
+            state.data=n
+        },
+        clear:(state)=>{
+            state.count=[]
+        }
+    },
+  
+})
+export default store;
