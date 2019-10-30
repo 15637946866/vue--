@@ -32,27 +32,21 @@
   height: 100px;
   display: flex;
  background-color: #fff;
- font-size: 28px;
-  li {
-   
-    background-color: #fff;
-    position: relative;
-    top:-100px;
-   span{
-     position: absolute;
-        bottom:0;
-        left: 46px;
-   }
+}
+.nav li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    /* height: 50px;
+    line-height: 50px;
+    text-align: center; */
     i{
-        font-size: 50px;
-        position: absolute;
-        top:0;
-        left: 50px;
+        font-size: 50px
     }
   
 }
-}
-
 .router-link-active{
     color: red
 }
