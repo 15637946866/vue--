@@ -30,7 +30,7 @@
     </ul>
   </div>
 </template>
-<style lang="less">
+<style lang="less" scoped>
 .nav {
   padding-top: 88px;
   box-sizing: border-box;
