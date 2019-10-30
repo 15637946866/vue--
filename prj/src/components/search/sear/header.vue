@@ -1,6 +1,6 @@
 <template>
   <div class="he">
-      <router-link  tag="li" to='/search'>
+      <router-link  tag="li" to='/home' >
     <img src="../../../assets/箭头.png" alt="">
       </router-link>
       <div class="sear">
@@ -10,12 +10,14 @@
  
      <router-link class="btn" tag="li" to='/search/jiu' @click.native="searchData">搜索</router-link>
       <router-view></router-view>
+    
   </div>
 </template>
 <script>
 import Vue from "vue";
 import {getjiu} from "../../../api/searchaxios.js";
 import { Button } from "mint-ui";
+
 Vue.component(Button.name, Button);
 
 export default {
@@ -25,18 +27,15 @@ export default {
       searval:'',
     };
   },
+ 
   methods:{
      async searchData(){  
          this.searval=this.$refs.inp.value;
          this.con=await getjiu(this.searval); 
          window.console.log(this.searval);
-        this.$router.push({
-          path: '/search/jiu',
-          query: {
-            mallCode: this.con
-          }
-        });
-
+         this.$store.commit("sub",this.con); 
+        this.$store.commit("add",this.searval); 
+        
       }
   },
   components:{
@@ -49,7 +48,7 @@ export default {
   width: 100%;
   height: 88px;
   display: flex;
-    
+  background-color: white;
   img {
     width: 34px;
     height: 34px;
