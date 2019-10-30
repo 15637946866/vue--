@@ -30,33 +30,26 @@
     </ul>
   </div>
 </template>
-<style lang="less">
+<style lang="less" scoped>
 .nav {
   padding-top: 88px;
   box-sizing: border-box;
   font-size: 30px;
-}
-//     span {
-//       width: 10px;
-//       height: 10px;
-//       border-left: 50px solid transparent;
-//       border-right: 50px solid transparent;
-//       border-bottom: 100px solid red;
-// }
-ul {
-  width: 250px;
-  height: 485px;
-}
-li {
-  width: 100%;
-  height: 95px;
-}
-li a{
+  ul {
+    width: 250px;
+    height: 485px;
+  }
+  li {
+    width: 100%;
+    height: 95px;
+  }
+  li a {
     width: 100%;
     height: 100%;
-}
-i{
+  }
+  i {
     width: 36px;
     height: 36px;
+  }
 }
 </style>
