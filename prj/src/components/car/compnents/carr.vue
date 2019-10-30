@@ -8,12 +8,12 @@
     <div class="touzh">
       <h1>购物车</h1>
     </div>
-    <div class="touy">
-      <a href="#">
-        <i class="iconfont icon-caidan"></i>
-      </a>
+    <div class="touy" @click="cd()">
+      <!-- <a href="#"> -->
+      <i class="iconfont icon-caidan"></i>
+      <!-- </a> -->
     </div>
-    <navs></navs>
+    <navs class="n"></navs>
   </div>
 </template>
 
@@ -69,10 +69,10 @@
   line-height: 86px;
   color: #969696;
 }
-.nav{
-    // display: none;
-    position: absolute;
-    right: 0;
+.n {
+  position: absolute;
+  right: 0;
+  display: none;
 }
 </style>
 <script>
@@ -80,6 +80,18 @@ import navs from "./nav.vue";
 export default {
   components: {
     navs
-  }
+  },
+  methods: {
+    cd() {
+      var k = document.querySelector(".n");
+      if(k.style.display=='none'){
+          k.style.display = "block"
+      }else{
+        k.style.display = "none"
+      }
+        
+    }
+  },
+  mounted() {}
 };
 </script>
