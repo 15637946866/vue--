@@ -4,9 +4,6 @@
       <a href="#" class="a1-l">
         <i class="iconfont icon-shezhi"></i>
       </a>
-      <a href="#" class="a2-r">
-        <i class="iconfont icon-shenglvehao-"></i>
-      </a>
     </div>
     <div class="cen">
       <a href="#" class="center-s"></a>
@@ -40,9 +37,44 @@
 .header {
   width: 100%;
   height: 500px;
+  animation: changeBg 20s infinite;
   background-color: #ed5564;
   background-image: url("../../../assets/mybeijing.png");
 }
+@keyframes changeBg {
+  0% {
+    background-color: #ed5564;
+  }
+
+  10% {
+    background-color: #fb6e52;
+  }
+  20% {
+    background-color: #ffce55;
+  }
+  30% {
+    background-color: #a0d468;
+  }
+  40% {
+    background-color: #48cfae;
+  }
+  50% {
+    background-color: #4fc0e8;
+  }
+  60% {
+    background-color: #5d9cec;
+  }
+  70% {
+    background-color: #ac92ed;
+  }
+  80% {
+    background-color: #ec87bf;
+  }
+  90% {
+    background-color: #ed5564;
+  }
+}
+
 .top {
   width: 100%;
   height: 86px;
@@ -61,20 +93,7 @@
   top: 13px;
   color: white;
 }
-.a2-r {
-  display: block;
-  width: 86px;
-  height: 86px;
-  float: right;
-  position: relative;
-}
-.icon-shenglvehao- {
-  font-size: 46px;
-  position: absolute;
-  right: 15px;
-  top: 8px;
-  color: white;
-}
+
 .cen {
   width: 552px;
   height: 276px;
@@ -113,13 +132,12 @@
     height: 140px;
     a {
       display: block;
-      
+
       i {
         font-size: 65px;
         color: white;
         margin-left: 36%;
         margin-top: 10px;
-        
       }
       p {
         font-size: 25px;
