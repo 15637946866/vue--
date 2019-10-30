@@ -1,44 +1,41 @@
 <template>
-  <div class="select">
-    <img src="https://www.taokubuy.com/data/upload/mobile/special/s0/s0_06227652599101434.jpg" alt />
+  <div class='seck'>
+    <img src="https://www.taokubuy.com/data/upload/mobile/special/s0/s0_06227649450396097.jpg" alt />
     <div class="top">
       <i></i>
       <div>
-        限量抢购
+        限时秒杀
         <span>更多</span>
       </div>
     </div>
     <div class="product">
       <ul>
-        
-        <li v-for="(item,index) in select" :key="index" class="l">
-          <a :href="item.a">
+        <li v-for="(item,index) in seckill" :key="index" class="l">
           <img :src="item.img" alt />
           <span>{{item.span}}</span>
           <p>{{item.p}}</p>
-          </a>
         </li>
       </ul>
     </div>
   </div>
 </template>
 <script>
-import { getSelect } from "@/api/home.js";
+import { getSeackill } from "@/api/home.js";
 export default {
   data() {
     return {
-      select: []
+      seckill: []
     };
   },
   async created() {
     // console.log("1111")
     // 进行ajax请求
-    this.select = await getSelect();
+    this.seckill = await getSeackill();
   }
 };
 </script>
 <style lang="less" scoped>
-.select{
+.seck{
     >img{
         margin: 20px 0;
     }
