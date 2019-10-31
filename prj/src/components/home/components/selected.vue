@@ -10,14 +10,14 @@
     </div>
     <div class="product">
       <ul>
-        
-        <li v-for="(item,index) in select" :key="index" class="l">
-          <a :href="item.a">
+        <!-- <li > -->
+          <router-link tag="li" v-for="(item,index) in select" :key="index" class="l" :to="item.link">
           <img :src="item.img" alt />
           <span>{{item.span}}</span>
           <p>{{item.p}}</p>
-          </a>
-        </li>
+          </router-link>
+        <!-- </li>  -->
+        <router-view></router-view>
       </ul>
     </div>
   </div>

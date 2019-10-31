@@ -18,3 +18,6 @@ export function getBrand(){
 export function getShopper(){
     return axios.get('/dang/shopper')
 }
+export function getDataBanner(){
+    return axios.get('/dang/data-banner')
+}

@@ -7,6 +7,7 @@ import car from '../components/car/car.vue'
 import search from '../components/search/search.vue'
 import jiu from '../components/search/sear/jiu.vue'
 import result from '../components/search/sear/result.vue'
+import data from '../components/home/components/data.vue'
 Vue.use(VueRouter)
  let routes=[
     {
@@ -18,7 +19,12 @@ Vue.use(VueRouter)
          component:home,
          meta:{
              title:'首页'
-         }
+         },
+         children: [{
+            path: 'data',
+            component: data,
+
+        }]
      },
      {
         path:'/sort',
