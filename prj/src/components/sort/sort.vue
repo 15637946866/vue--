@@ -20,12 +20,13 @@
       <div class="content-right">
         <div class="wrapper-right">
          
-              <ul>
-                <li v-for="(item,index) in 6" :key="index">
-                  11111
+              <ul class="myul">
+                
+                <li v-for="(ite,inde) in allbrand" :key="inde">
+                  <p><i></i> {{ite.title}} <img src="./images/more.png"></p>
                   <ul>
-                    <li v-for="(item,index) in allbrand" :key="index" class="pic">
-                      <img :src="item.img" alt />
+                    <li v-for="(item,index) in ite.list" :key="index" class="pic">
+                      <img :src="item.img" >
                       <span>{{item.span}}</span>
                     </li>
                   </ul>
@@ -35,6 +36,7 @@
         </div>
       </div>
     </div>
+ 
   </div>
 </template>
 
@@ -51,7 +53,8 @@ export default {
       alltitle: [],
       bs1: null,
       bs2: null,
-      currentIndex: 0
+      currentIndex: 0,
+      
     };
   },
   components: {
@@ -103,6 +106,7 @@ export default {
 .cate {
   height: 1334px;
   overflow: hidden;
+  position: relative;
   .content {
     height: 1128px;
     display: flex;
@@ -130,14 +134,70 @@ export default {
     background: white;
     .wrapper-right {
       height: 100%;
+      
     }
   }
-}
-.pic {
-  float: left;
-  img {
-    width: 100px;
-    height: 100px;
+  .myul{
+  
+  li{
+   
+    margin: 30px 0;
+    // position: relative;
+    
+    p{
+      width: 100%;
+      height: 65px;
+      line-height: 65px;
+      font-size: 26.4px;
+      color: #111111;
+      font-weight: 600;
+      
+    //   position: absolute;
+    //  left: 220px;
+    //  top: -35px;
+     i{
+       display: inline-block;
+       width: 17.6px;
+       height: 17.6px;
+       border-radius: 17.6px;
+       background: #AC92ED;
+     }
+     img{
+       width: 26px;
+       height: 26px;
+       float: right;
+       margin:30px 30px 8px 30px;
+       
+     }
+  
+   
+    }
+    ul{
+      overflow: hidden;
+      li{
+        width: 165px;
+        height: 165px;
+        float: left;
+        margin: 10px;
+        img{
+          width: 88px;
+          height: 88px;
+          margin: 0px 25px;
+        }
+        span{
+          display: block;
+          height: 64px;
+          width: 147.38px;
+          text-align: center;
+          line-height: 64px;
+        }
+      }
+    }
   }
+  }
+
+
+  
 }
+
 </style>

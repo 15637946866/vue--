@@ -28,7 +28,7 @@ router.get('/cateList',function(req,res,next){
             txt:'兴农扶贫'
         },
         {
-            img:'https://www.taokubuy.com/data/upload/shop/adv/05567113730153863.png',
+            img:'https://www.taokubuy.com/data/upload/shop/adv/05567113730153863.png',      
             txt:'工厂直供'
         },
         {
@@ -61,7 +61,7 @@ router.get('/cateList',function(req,res,next){
 
 router.get('/select',function(req,res,next){
     var arr=[
-        {   a:'https://www.taokubuy.com/wap/tmpl/product_detail.html?goods_id=6602',
+        {   link:'/home/data',
             img:"https://www.taokubuy.com/data/upload/shop/store/goods/75/75_06178186750074442_360.jpg",
             span:"￥599.00",
             p:"￥599.00"
@@ -70,25 +70,25 @@ router.get('/select',function(req,res,next){
             img:"https://www.taokubuy.com/data/upload/shop/store/goods/78/78_06190191362359603_360.jpg",
             span:"￥158.00",
             p:"￥158.00",
-            a:"https://www.taokubuy.com/wap/tmpl/product_detail.html?goods_id=6649"
+            link:""
         },
         {
             img:"https://www.taokubuy.com/data/upload/shop/store/goods/28/28_05689932713141776_360.jpg",
             span:"￥19.90",
             p:"￥29.80",
-            a:"https://www.taokubuy.com/wap/tmpl/product_detail.html?goods_id=5734"
+            link:""
         },
         {
             img:"https://www.taokubuy.com/data/upload/shop/store/goods/78/78_06190194126181579_360.jpg",
             span:"￥228.00",
             p:"￥228.00",
-            a:"https://www.taokubuy.com/wap/tmpl/product_detail.html?goods_id=6650"
+            link:""
         },
         {
             img:"https://www.taokubuy.com/data/upload/shop/store/goods/78/78_06190188215112436_360.png",
             span:"￥354.00",
             p:"￥412.00",
-            a:"https://www.taokubuy.com/wap/tmpl/product_detail.html?goods_id=6648"
+            link:""
         }
     ]
     res.send(arr)
@@ -179,8 +179,18 @@ router.get('/shopper',function(req,res,next){
         ]
     ]
     res.send(arr)
-})
+});
 
+router.get('/data-banner', function(req, res, next) {
+    var arr = [
+        "https://www.taokubuy.com/data/upload/shop/store/goods/75/75_06178186750074442_1280.jpg",
+        "https://www.taokubuy.com/data/upload/shop/store/goods/75/75_06178188978992718_1280.jpg",
+        "https://www.taokubuy.com/data/upload/shop/store/goods/75/75_06178189001206792_1280.jpg",
+        "https://www.taokubuy.com/data/upload/shop/store/goods/75/75_06178189032578009_1280.jpg",
+        'https://www.taokubuy.com/data/upload/shop/store/goods/75/75_06178189069033336_1280.jpg'
+    ]
+    res.send(arr);
+});
 
 
 module.exports = router;
