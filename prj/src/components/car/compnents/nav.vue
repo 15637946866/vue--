@@ -1,4 +1,4 @@
-<template>
+ <template>
   <div class="nav">
     <span></span>
     <ul>
@@ -35,7 +35,6 @@
   padding-top: 30px;
   box-sizing: border-box;
   font-size: 30px;
-<<<<<<< HEAD
 }
 span {
   display: block;
@@ -82,23 +81,5 @@ li a {
 i {
   font-size: 30px;
   margin-right: 20px;
-=======
-  ul {
-    width: 250px;
-    height: 485px;
-  }
-  li {
-    width: 100%;
-    height: 95px;
-  }
-  li a {
-    width: 100%;
-    height: 100%;
-  }
-  i {
-    width: 36px;
-    height: 36px;
-  }
->>>>>>> c0ed7f75a35d636c6f4d7e8b5e24c196383d1049
 }
 </style>

@@ -5,7 +5,7 @@
       </router-link>
       <div class="sear">
           <i class="iconfont icon-sousuo"></i>
-           <input type="text" ref="inp" placeholder="请输入搜索关键字">
+           <input type="text" ref="inp"  v-model="inputVal" placeholder="请输入搜索关键字">
       </div>
  
      <router-link class="btn" tag="li" to='/search/jiu' @click.native="searchData">搜索</router-link>
@@ -25,16 +25,15 @@ export default {
     return {
       con:[],
       searval:'',
+      inputVal: ''
     };
   },
  
   methods:{
      async searchData(){  
-         this.searval=this.$refs.inp.value;
-         this.con=await getjiu(this.searval); 
-         window.console.log(this.searval);
+         this.con=await getjiu(this.inputVal); 
          this.$store.commit("sub",this.con); 
-        this.$store.commit("add",this.searval); 
+        this.$store.commit("add",this.inputVal); 
         
       }
   },

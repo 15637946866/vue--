@@ -1,16 +1,17 @@
 <template>
   <div class="tou">
     <ul>
-       <router-link tag="li" to="/search/jiu" @click.native="zohe">
+       <router-link tag="li" to="/search/jiu" @click.native="isShow=!isShow;jin(0,true)" :class="{redclass:mouseindex==0}">
         综合排序
-        <i class="iconfont icon-arrow"></i>
-        <dl class="list">
-          <dt>综合排序</dt>
-          <dt>价格从高到低</dt>
-          <dt>价格从低到高</dt>
+        <i class="iconfont icon-arrow"></i>  
+         </router-link>
+        <dl class="list" v-if="isShow">
+          <dt @click="zohe();jin(0,false)" :class="{redclass:mouseindex==0}">综合排序 </dt>
+          <dt @click="jin(1,true)"  :class="{redclass:mouseindex==1}">价格从高到低</dt>
+          <dt @click="jin(2,true)"  :class="{redclass:mouseindex==2}">价格从低到高</dt>
         </dl>
-      </router-link>
-      <router-link tag="li" to="/search/jiu" @click.native="searchData">销量</router-link>
+   
+      <router-link tag="li" to="/search/jiu" @click.native="searchData();jin(4,false)" :class="{redclass:mouseindex==4}" >销量</router-link>
       <router-view></router-view>
       <router-link tag="li" to="/search/jiu/result" >筛选</router-link>
     </ul>
@@ -20,6 +21,13 @@
 import { getjiu } from "../../../api/searchaxios.js";
 import {mapState} from "vuex";
 export default {
+  data(){
+    return{
+      isShow:false,
+      mouseindex:0,
+
+    }
+  },
   computed: {
     ...mapState([
       // 映射 this.count 为 store.state.count
@@ -36,7 +44,14 @@ export default {
       this.searval = this.cone;
      this.con = await getjiu(this.searval);
      this.$store.commit("sub",this.con); 
-    }
+    },
+   jin(index,boo){
+     this.mouseindex=index;
+     if(!boo){
+       this.isShow=false;
+     }
+   },
+  
   }
 };
 </script>
@@ -58,6 +73,7 @@ export default {
   ul {
     display: flex;
     li {
+      height: 79px;
       flex: 1;
       text-align: center;
       line-height: 80px;
@@ -66,12 +82,20 @@ export default {
   .list {
     background-color: white;
     position: absolute;
+    top: 80px;
     width: 750px;
-    height: 300px;
+    
     dt {
       border-bottom: 1px solid #000;
+      height: 100px;
+      line-height: 100px;
+     padding-left: 30px;
     }
-    display: none;
+    
+  
   }
 }
+.redclass {
+     color: red;
+        }
 </style>

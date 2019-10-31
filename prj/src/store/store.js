@@ -21,6 +21,18 @@ var store=new Vuex.Store({
             state.count=[]
         }
     },
+    getters: {
+        isShow(state) {
+            if(!state.data) {
+                return;
+            }
+            if (state.data.length > 0) {
+                return false
+            } else {
+                return true;
+            }
+        }
+    }
   
 })
 export default store;
