@@ -32,31 +32,73 @@
 </template>
 <style lang="less" scoped>
 .nav {
-  padding-top: 88px;
+  padding-top: 30px;
   box-sizing: border-box;
   font-size: 30px;
+<<<<<<< HEAD
 }
-//     span {
-//       width: 10px;
-//       height: 10px;
-//       border-left: 50px solid transparent;
-//       border-right: 50px solid transparent;
-//       border-bottom: 100px solid red;
-// }
+span {
+  display: block;
+  float: right;
+  width: 0;
+  height: 0;
+  margin-right: 0.5rem;
+  font-size: 0;
+  line-height: 0;
+  border-width: 0.3rem;
+  // border-color: transparent transparent rgba(85, 85, 85, 0.95) transparent;
+  // border-style: dashed dashed solid dashed;
+  // margin-top: 12px;
+}
 ul {
-  width: 250px;
-  height: 485px;
+  list-style: none;
+  display: block;
+  clear: both;
+  background: rgba(85, 85, 85, 0.95);
+  border-radius: 0.2rem;
+  width: 226px;
+  margin-right: 0.1rem;
+  position: absolute;
+  right: 0;
+  top: 86px;
 }
 li {
+  list-style: none;
   width: 100%;
-  height: 95px;
+  height: 88px;
+  line-height: 88px;
+  border-bottom: 1px solid #969696;
 }
-li a{
+li a {
+  height: 88px;
+  display: block;
+  font-size: 30px;
+  line-height: 88px;
+  color: #fff;
+  // padding-left: 40px;
+  // box-sizing: border-box;
+  margin-left: 30px;
+}
+i {
+  font-size: 30px;
+  margin-right: 20px;
+=======
+  ul {
+    width: 250px;
+    height: 485px;
+  }
+  li {
+    width: 100%;
+    height: 95px;
+  }
+  li a {
     width: 100%;
     height: 100%;
-}
-i{
+  }
+  i {
     width: 36px;
     height: 36px;
+  }
+>>>>>>> c0ed7f75a35d636c6f4d7e8b5e24c196383d1049
 }
 </style>

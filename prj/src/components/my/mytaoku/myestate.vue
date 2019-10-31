@@ -1,47 +1,47 @@
 <template>
-  <div class="cen-one">
-    <div class="one-top">
+  <div class="cen-two">
+    <div class="two-top">
       <a href="#" class="top-a">
         <h3>
-          <i class="iconfont icon-dingdan"></i>
-          <span>我的订单</span>
+          <i class="iconfont icon-qianbao-copy"></i>
+          <span>我的财产</span>
         </h3>
         <h5>
-          <span>查看全部订单</span>
+          <span>查看全部财产</span>
           <i class="iconfont icon-pc-you"></i>
         </h5>
       </a>
     </div>
-    <div class="one-buttom">
+    <div class="two-buttom">
       <ul>
         <li>
           <a href="#">
-            <i class="iconfont icon-qianbao" style="display:block;margin-top:5px;"></i>
-            <p>待付款</p>
+            <i class="iconfont icon-cunkuan" style="display:block;margin-top:5px;"></i>
+            <p>预存款</p>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="iconfont icon-icon-receive" style="display:block;margin-top:5px;"></i>
-            <p>待收货</p>
+            <i class="iconfont icon-chongzhiqia" style="display:block;margin-top:5px;"></i>
+            <p>充值卡</p>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="iconfont icon-songhuohuoche" style="display:block;margin-top:5px;"></i>
-            <p>待自提</p>
+            <i class="iconfont icon-wodedaijinquan" style="display:block;margin-top:5px;"></i>
+            <p>代金券</p>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="iconfont icon-pingjia" style="display:block;margin-top:5px;"></i>
-            <p>待评价</p>
+            <i class="iconfont icon-hongbao" style="display:block;margin-top:5px;"></i>
+            <p>红包</p>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="iconfont icon-tuikuan" style="display:block;margin-top:5px;"></i>
-            <p>退款/退货</p>
+            <i class="iconfont icon-jifen" style="display:block;margin-top:5px;"></i>
+            <p>积分</p>
           </a>
         </li>
       </ul>
@@ -49,7 +49,7 @@
   </div>
 </template>
 <style lang="less" scoped>
-.cen-one {
+.cen-two {
   margin-top: 20px;
   width: 100%;
   height: 180px;
@@ -58,14 +58,14 @@
   padding-top: 5px;
   padding-bottom: 10px;
 }
-.one-top {
+.two-top {
   width: 100%;
   height: 60px;
   border-bottom: solid 1px #eee;
 }
 .top-a {
   display: block;
-  width: 705px;
+  width: 660px;
   height: 40px;
   margin: 0 auto;
   margin-top: 10px;
@@ -73,13 +73,14 @@
 h3 {
   width: 190px;
   float: left;
-  .icon-dingdan {
+  padding-left: 7px;
+  .icon-qianbao-copy {
     font-size: 30px;
     color: skyblue;
   }
   span {
     font-size: 30px;
-    margin-left: 8px;
+    margin-left: 16px;
     color: black;
   }
 }
@@ -97,7 +98,7 @@ h5 {
   }
 }
 
-.one-buttom {
+.two-buttom {
   width: 100%;
   height: 110px;
 }
