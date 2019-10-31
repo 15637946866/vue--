@@ -10,7 +10,7 @@ router.get('/sort',function(req,res,next){
             title:"品牌推荐"
         },
         {
-            id:1,
+            id:2,
             title:"家用电器"
         },
         {
@@ -75,8 +75,127 @@ router.get('/sort',function(req,res,next){
         },
     ]
     res.send(arr)
-})
+});
 
+router.get('/brand',function(req,res,next){
+    var id=req.query.id;
+    console.log(id)
+    if(id==1){
+    var arr=[
+        {
+            img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-895.jpg",
+            span:"家用电视"
+        },
+        {
+            img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-896.jpg",
+            span:"空调"
+        },
+        {
+            img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-897.jpg",
+            span:"洗衣机"
+        },
+        {
+            img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-898.jpg",
+            span:"热水器"
+        },
+        {
+            img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-1549.jpg",
+            span:"冰箱"
+        },
+        {
+            img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-1595.jpg",
+            span:"电热毯"
+        },
+        {
+            img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-1599.jpg",
+            span:"电熨斗"
+        },
+        {
+            img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-1645.jpg",
+            span:"取暖器"
+        },
+        {
+            img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-1648.jpg",
+            span:"除湿器"
+        },
+        {
+            img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-1665.jpg",
+            span:"冷藏柜"
+        },
+        {
+            img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-905.jpg",
+            span:"其他"
+        },
+        
+    ]}else if(id==2){
+        var arr=[
+            {
+                img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-895.jpg",
+                span:"家用电视"
+            },
+            {
+                img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-896.jpg",
+                span:"空调"
+            },
+            {
+                img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-896.jpg",
+                span:"洗衣机"
+            },
+            {
+                img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-896.jpg",
+                span:"热水器"
+            },
+            {
+                img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-1549.jpg",
+                span:"冰箱"
+            },
+            {
+                img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-1595.jpg",
+                span:"电热毯"
+            },
+            {
+                img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-1599.jpg",
+                span:"电熨斗"
+            },
+            {
+                img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-1645.jpg",
+                span:"取暖器"
+            },
+            {
+                img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-1648.jpg",
+                span:"除湿器"
+            },
+            {
+                img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-1665.jpg",
+                span:"冷藏柜"
+            },
+            {
+                img:"https://www.taokubuy.com/data/upload/shop/common/category-pic-905.jpg",
+                span:"其他"
+            },
+        ]
+    }
+
+    
+
+
+
+
+
+
+    res.send(arr);
+});
+
+router.get("/title",function(req,res,next){
+    var arr=[
+        {title:"家用电器"},
+        {title:"厨房大电"},
+        {title:"中式厨房"},
+        {title:"西式厨房"},
+        {title:"生活电器"},
+        {title:"个户健康"},
+    ]
+})
 
 
 module.exports = router;
