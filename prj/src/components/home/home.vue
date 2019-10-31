@@ -34,7 +34,10 @@ export default {
 };
 </script>
 <style lang="less" scoped>
+
 #app{
+  overflow-y: auto; 
+  width: 100%;
   margin-bottom: 96px
 }
 </style>

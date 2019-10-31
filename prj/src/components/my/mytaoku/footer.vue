@@ -1,42 +1,45 @@
 <template>
   <div class="footer">
     <div class="foot-one">
-      <a href="#">登录</a>
-      <a href="#">注册</a>
-      <a href="#">反馈</a>
-      <a href="#">返回顶部</a>
+      <a  >登录</a>
+      <a  >注册</a>
+      <a  >反馈</a>
+      <a  >返回顶部</a>
     </div>
     <div class="foot-two">
       <p>
-        <a href="#">
+        <a  >
           <img src="../../../assets/xiazaiyoujiang.png" alt />
           <span style="margin-top: 5px;">下载有奖</span>
         </a>
       </p>
 
       <p>
-        <a href="#">
+        <a  >
           <img src="../../../assets/iphone.png" alt />
           <span style="margin-top: 5px; color: #000000;">触屏版</span>
         </a>
       </p>
       <p>
-        <a href="#">
+        <a  >
           <img src="../../../assets/mac.png" alt />
           <span style="margin-top: 5px;">电脑版</span>
         </a>
       </p>
     </div>
     <div class="foot-three">
-      <p>Copyright © 2019 淘库商城股份有限公司 保留版权及所有权利</p>
+      <p>Copyright © 2019 淘库商城股份有限公司</p>
     </div>
-  <div class="foot-four">  </div>
+    <div class="foot-four">
+      <p>保留版权及所有权利</p>
+    </div>
+    <div class="foot-five"></div>
   </div>
 </template>
 <style lang="less" scoped>
 .footer {
   width: 100%;
-  height: 400px;
+  height: 464px;
   margin-top: 20px;
 }
 .foot-one {
@@ -57,7 +60,7 @@
 }
 .foot-two {
   width: 100%;
-  height: 98px;
+  height: 106px;
   display: inline-block;
   border-bottom: solid 0.05rem #e5e5e5;
   p {
@@ -83,15 +86,22 @@
     }
   }
 }
-.foot-three{
-    width: 100%;
-    height:64px;
-    text-align: center;
-    line-height: 64px;
+.foot-three {
+  width: 100%;
+  height: 64px;
+  text-align: center;
+  line-height: 64px;
 }
-.foot-four{
-    width: 100%;
-    height: 64px;
-    background: white;
+.foot-four {
+  width: 100%;
+  height: 64px;
+  background: white;
+  text-align: center;
+  line-height: 64px;
+}
+.foot-five {
+  width: 100%;
+  height: 64px;
+  background: white;
 }
 </style>

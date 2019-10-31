@@ -1,7 +1,7 @@
 <template>
   <div class="cen-one">
     <div class="one-top">
-      <a href="#" class="top-a">
+      <a   class="top-a">
         <h3>
           <i class="iconfont icon-dingdan"></i>
           <span>我的订单</span>
@@ -15,31 +15,31 @@
     <div class="one-buttom">
       <ul>
         <li>
-          <a href="#">
+          <a  >
             <i class="iconfont icon-qianbao" style="display:block;margin-top:5px;"></i>
             <p>待付款</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a  >
             <i class="iconfont icon-icon-receive" style="display:block;margin-top:5px;"></i>
             <p>待收货</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a  >
             <i class="iconfont icon-songhuohuoche" style="display:block;margin-top:5px;"></i>
             <p>待自提</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a  >
             <i class="iconfont icon-pingjia" style="display:block;margin-top:5px;"></i>
             <p>待评价</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a  >
             <i class="iconfont icon-tuikuan" style="display:block;margin-top:5px;"></i>
             <p>退款/退货</p>
           </a>
@@ -93,7 +93,7 @@ h5 {
   }
   .icon-pc-you {
     font-size: 16px;
-    margin-left: 6px;
+   
   }
 }
 

@@ -1,7 +1,7 @@
 npm<template>
   <div class="cen-three">
     <div class="three-one">
-      <a href="#" class="top-a">
+      <a   class="top-a">
         <h3>
           <i class="iconfont icon-navicon-ztdzsz"></i>
           <span>收货地址管理</span>
@@ -13,7 +13,7 @@ npm<template>
     </div>
 
     <div class="three-two">
-      <a href="#" class="top-a">
+      <a   class="top-a">
         <h3>
           <i class="iconfont icon-shezhi2"></i>
           <span>用户设置</span>

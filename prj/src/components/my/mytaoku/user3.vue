@@ -1,7 +1,7 @@
 <template>
   <div class="cen-four">
     <div class="three-four">
-      <a href="#" class="top-a">
+      <a class="top-a">
         <h3>
           <i class="iconfont icon-bangzhuzhongxin"></i>
           <span>帮助</span>
@@ -51,6 +51,7 @@ h3 {
 h5 {
   width: 45px;
   float: right;
+  margin-right: 6px;
   margin-top: 1.5px;
   padding-top: 1px;
   .icon-pc-you {
