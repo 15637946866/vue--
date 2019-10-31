@@ -28,10 +28,13 @@ export default {
 
 <style lang="less" scoped>
  #header{
+         position: fixed;
+        z-index: 99;
         width: 100%;
         background:white;
         padding: 10px 0;
         display: flex;
+        
         
         .big{
             width: 552px;
