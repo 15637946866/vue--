@@ -7,6 +7,7 @@ import car from '../components/car/car.vue'
 import search from '../components/search/search.vue'
 import jiu from '../components/search/sear/jiu.vue'
 import result from '../components/search/sear/result.vue'
+import sbgg from '../components/car/compnents/sbgg.vue'
 Vue.use(VueRouter)
  let routes=[
     {
@@ -55,7 +56,12 @@ Vue.use(VueRouter)
         component:car,
         meta:{
             title:'购物车'
-        }
+        },
+        children: [{
+            path: 'sbgg',
+            component: sbgg,
+
+        }]
     },
      
   
