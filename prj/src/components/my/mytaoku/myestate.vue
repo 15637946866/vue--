@@ -94,7 +94,7 @@ h5 {
   }
   .icon-pc-you {
     font-size: 16px;
-    margin-left: 6px;
+
   }
 }
 
