@@ -1,7 +1,7 @@
 <template>
   <div class="cen-three">
     <div class="three-three">
-      <a href="#" class="top-a">
+      <a   class="top-a">
         <h3>
           <i class="iconfont icon-yaoqingfanli"></i>
           <span>邀请返利</span>
@@ -49,8 +49,9 @@ h3 {
   }
 }
 h5 {
-  width: 45px;
+  width: 47px;
   float: right;
+  margin-right: 10px;
   margin-top: 1.5px;
   padding-top: 1px;
   .icon-pc-you {

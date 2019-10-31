@@ -1,31 +1,32 @@
 <template>
   <div class="header">
     <div class="top">
-      <a href="#" class="a1-l">
+      <a   class="a1-l">
         <i class="iconfont icon-shezhi"></i>
       </a>
     </div>
     <div class="cen">
-      <a href="#" class="center-s"></a>
-      <a href="#" class="center">
-        <span>点击登录</span>
+      <a   class="center-s"></a>
+      <a   class="center">
+        <router-view></router-view>
+      <router-link tag="li" to=/log class="log_in">点击登录</router-link>
       </a>
     </div>
     <div class="bottom">
       <span>
-        <a href="#">
+        <a  >
           <i class="iconfont icon-xin"></i>
           <p>商品收藏</p>
         </a>
       </span>
       <span>
-        <a href="#">
+        <a>
           <i class="iconfont icon-shangpu"></i>
           <p>店铺收藏</p>
         </a>
       </span>
       <span>
-        <a href="#">
+        <a>
           <i class="iconfont icon-zuji"></i>
           <p>我的足迹</p>
         </a>
@@ -117,7 +118,7 @@
   margin: 0 auto;
   margin-top: 8px;
 }
-.center span {
+.log_in {
   font-size: 32px;
   color: white;
   margin-left: 6px;

@@ -1,7 +1,7 @@
 <template>
   <div class="cen-two">
     <div class="two-top">
-      <a href="#" class="top-a">
+      <a   class="top-a">
         <h3>
           <i class="iconfont icon-qianbao-copy"></i>
           <span>我的财产</span>
@@ -15,31 +15,31 @@
     <div class="two-buttom">
       <ul>
         <li>
-          <a href="#">
+          <a  >
             <i class="iconfont icon-cunkuan" style="display:block;margin-top:5px;"></i>
             <p>预存款</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a  >
             <i class="iconfont icon-chongzhiqia" style="display:block;margin-top:5px;"></i>
             <p>充值卡</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a  >
             <i class="iconfont icon-wodedaijinquan" style="display:block;margin-top:5px;"></i>
             <p>代金券</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a  >
             <i class="iconfont icon-hongbao" style="display:block;margin-top:5px;"></i>
             <p>红包</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a  >
             <i class="iconfont icon-jifen" style="display:block;margin-top:5px;"></i>
             <p>积分</p>
           </a>
@@ -63,9 +63,10 @@
   height: 60px;
   border-bottom: solid 1px #eee;
 }
+
 .top-a {
   display: block;
-  width: 660px;
+  width: 705px;
   height: 40px;
   margin: 0 auto;
   margin-top: 10px;
@@ -73,7 +74,7 @@
 h3 {
   width: 190px;
   float: left;
-  padding-left: 7px;
+  padding-left: 12px;
   .icon-qianbao-copy {
     font-size: 30px;
     color: skyblue;
