@@ -5,9 +5,8 @@
     </div>
     <p class="kong">您的购物车还是空的</p>
     <p class="tiao">去挑一些中意的商品吧</p>
-    <a href="#">
-      <span>随便逛逛</span>
-    </a>
+    <router-view></router-view>
+    <router-link tag="li" to="/car/sbgg" class="gg"><span>随便逛逛</span></router-link>
   </div>
 </template>
 <style lang="less" scoped>
@@ -36,7 +35,7 @@
   .tiao {
     font-size: 25px;
   }
-  a {
+  .gg {
     display: block;
     width: 150x;
     height: 50px;
