@@ -1,9 +1,9 @@
 <template>
   <div class="tou">
     <div class="touz">
-      <a href="#">
-        <i class="iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-"></i>
-      </a>
+      <router-link  tag="li" to='/home' >
+    <img class="hui" src="../../../assets/箭头.png" alt="">
+      </router-link>
     </div>
     <div class="touzh">
       <h1>购物车</h1>
@@ -29,6 +29,14 @@
   //   display: block;
   width: 88px;
   height: 88px;
+  .hui{
+    position: absolute;
+    left: 0;
+    top: 0px;
+     width: 34px;
+    height: 34px;
+    padding: 26px 20px;
+    }
 }
 .touz a {
   // display: block;
