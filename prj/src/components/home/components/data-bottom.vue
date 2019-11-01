@@ -4,10 +4,12 @@
       <img src="./images/客服.png" alt />
       <p>客服</p>
     </div>
-    <div class="gw">
+    <!-- <div class="gw"> -->
+      <router-link to='/car' tag='div' class="gw">
       <img src="./images/购物车.png" alt />
       <p>购物车</p>
-    </div>
+      </router-link>
+    <!-- </div> -->
     <div class="jr">立即购买</div>
     <div class="gm">加入购物车</div>
   </div>
@@ -19,6 +21,7 @@
   justify-content: center;
   align-items: center;
   height: 88px;
+  background: #fff;
   .kf {
     display: flex;
     flex-direction: column;

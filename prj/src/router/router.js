@@ -59,6 +59,10 @@ let routes = [{
         }]
     },
     {
+        path: '/froms',
+        component: froms,
+    },
+    {
         path: '/search',
         component: search,
         meta: {
