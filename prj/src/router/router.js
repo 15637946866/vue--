@@ -7,25 +7,16 @@ import car from '../components/car/car.vue'
 import search from '../components/search/search.vue'
 import jiu from '../components/search/sear/jiu.vue'
 import result from '../components/search/sear/result.vue'
-<<<<<<< HEAD
 import log from '../components/my/mytaoku/log.vue'
 import sign from '../components/my/mytaoku/sign.vue'
-=======
 import data from '../components/home/components/data.vue'
 import sbgg from '../components/car/compnents/sbgg'
->>>>>>> 1cfda4ff4a0443cb2c2502740e2b816975e22cbd
+
 Vue.use(VueRouter)
 let routes = [{
         path: '/',
         redirect: "/home"
     },
-<<<<<<< HEAD
-    {
-        path: '/home',
-        component: home,
-        meta: {
-            title: '首页'
-=======
      {
          path:'/home',
          component:home,
@@ -43,7 +34,6 @@ let routes = [{
         component:sort,
         meta:{
             title:'分类'
->>>>>>> 1cfda4ff4a0443cb2c2502740e2b816975e22cbd
         }
     },
     {
@@ -86,13 +76,6 @@ let routes = [{
         }]
     },
     {
-<<<<<<< HEAD
-        path: '/car',
-        component: car,
-        meta: {
-            title: '购物车'
-        }
-=======
         path:'/car',
         component:car,
         meta:{
@@ -103,7 +86,6 @@ let routes = [{
             component: sbgg,
 
         }]
->>>>>>> 1cfda4ff4a0443cb2c2502740e2b816975e22cbd
     },
 
 

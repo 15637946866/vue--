@@ -3,11 +3,13 @@
     <div class="header">
       <img src="https://www.taokubuy.com/data/upload/shop/common/home_logo.png" alt />
 
-      <div class="search">
+      <!-- <div class="search"> -->
+        <router-link to='/search' tag='div' class="search">
         <!-- 搜索 -->
         <i class="iconfont icon-sousuo"></i>
         <input placeholder="请输入关键字" type="text" />
-      </div>
+        </router-link>
+      <!-- </div> -->
       <div class="news">
         <!-- 消息 -->
         <i class="iconfont icon-xiaoxi"></i>
