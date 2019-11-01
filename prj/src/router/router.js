@@ -12,6 +12,7 @@ import sign from '../components/my/mytaoku/sign.vue'
 import data from '../components/home/components/data.vue'
 import sbgg from '../components/car/compnents/sbgg'
 import froms from '../components/my/mytaoku/froms'
+
 Vue.use(VueRouter)
 let routes = [{
         path: '/',
