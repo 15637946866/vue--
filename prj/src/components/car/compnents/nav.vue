@@ -35,6 +35,7 @@
   padding-top: 30px;
   box-sizing: border-box;
   font-size: 30px;
+  z-index: 10;
 }
 span {
   display: block;

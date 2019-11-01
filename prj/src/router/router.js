@@ -11,29 +11,30 @@ import log from '../components/my/mytaoku/log.vue'
 import sign from '../components/my/mytaoku/sign.vue'
 import data from '../components/home/components/data.vue'
 import sbgg from '../components/car/compnents/sbgg'
+import froms from '../components/my/mytaoku/froms'
 
 Vue.use(VueRouter)
 let routes = [{
         path: '/',
         redirect: "/home"
     },
-     {
-         path:'/home',
-         component:home,
-         meta:{
-             title:'首页'
-         },
-         children: [{
+    {
+        path: '/home',
+        component: home,
+        meta: {
+            title: '首页'
+        },
+        children: [{
             path: 'data',
             component: data,
 
         }]
-     },
-     {
-        path:'/sort',
-        component:sort,
-        meta:{
-            title:'分类'
+    },
+    {
+        path: '/sort',
+        component: sort,
+        meta: {
+            title: '分类'
         }
     },
     {
@@ -60,6 +61,10 @@ let routes = [{
         }]
     },
     {
+        path: '/froms',
+        component: froms,
+    },
+    {
         path: '/search',
         component: search,
         meta: {
@@ -76,10 +81,10 @@ let routes = [{
         }]
     },
     {
-        path:'/car',
-        component:car,
-        meta:{
-            title:'购物车'
+        path: '/car',
+        component: car,
+        meta: {
+            title: '购物车'
         },
         children: [{
             path: 'sbgg',
