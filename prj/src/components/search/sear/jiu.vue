@@ -42,17 +42,22 @@ export default {
   components: {
     sales
   },
-  created() {},
+  created() {
+    
+  },
   computed: {
     ...mapState([
       // 映射 this.count 为 store.state.count
-      "data"
+      "data",
+      'sortdata'
     ]),
     ...mapGetters([
       'isShow'
     ])
   },
- 
+ beforeUpdate(){
+   window.console.log(this.sortdata)
+ },
   mounted() {
     this.$nextTick(() => {
       this.bs = new BScroll(".wrapper", {

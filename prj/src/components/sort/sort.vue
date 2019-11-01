@@ -25,10 +25,11 @@
                 <li v-for="(ite,inde) in allbrand" :key="inde">
                   <p><i></i> {{ite.title}} <img src="./images/more.png"></p>
                   <ul>
-                    <li v-for="(item,index) in ite.list" :key="index" class="pic">
+                    <li  @click="searchData(item.span)" v-for="(item,index) in ite.list" :key="index" class="pic">
                       <img :src="item.img" >
-                      <span>{{item.span}}</span>
+                      <span >{{item.span}}</span>
                     </li>
+                    <router-view></router-view>
                   </ul>
                 </li>
               </ul>
@@ -43,7 +44,7 @@
 <script>
 import heade from "./comment/header.vue";
 import BScroll from "@better-scroll/core";
-import { getsort, getbrand } from "../../api/sort.js";
+import { getsort, getbrand ,getlistone} from "../../api/sort.js";
 
 export default {
   data() {
@@ -54,6 +55,7 @@ export default {
       bs1: null,
       bs2: null,
       currentIndex: 0,
+      con:[]
       
     };
   },
@@ -78,14 +80,21 @@ export default {
       } else {
         this.bs1.scrollTo(0, -628, 100);
       }
-    }
+    },
+  async searchData(Val){  
+         this.con=await getlistone(Val); 
+         this.$store.commit("sort",this.con); 
+         this.$router.push('/listone')
+         
+        
+      }
   },
   created() {},
   async mounted() {
     this.allcates = await getsort();
     //  this.alltitle = await gettitle();
     this.allbrand = await getbrand(this.allcates[0].id);
-    window.console.log(this.allbrand);
+    // window.console.log(this.allbrand);
     this.$nextTick(() => {
       this.bs1 = new BScroll(".wrapper", {
         click: true
