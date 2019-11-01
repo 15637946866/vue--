@@ -2,7 +2,7 @@
   <div class="tou">
     <div class="touz">
       <router-link  tag="li" to='/home' >
-    <img class="hui" src="../../../assets/箭头.png" alt="">
+          <img class="huii" src="../../../assets/箭头.png" alt="">
       </router-link>
     </div>
     <div class="touzh">
@@ -23,13 +23,15 @@
   width: 100%;
   height: 88px;
   display: flex;
+  position: relative;
+ 
 }
 .touz {
   float: left;
   //   display: block;
   width: 88px;
   height: 88px;
-  .hui{
+  .huii{
     position: absolute;
     left: 0;
     top: 0px;
