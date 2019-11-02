@@ -319,6 +319,112 @@ router.get('/jiu', function(req, res, next) {
                 addr:'盛世无线充电工厂店'
             },
         ]
+    }else if(id=='海尔'){
+        arr = [
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/75/75_06178186750074442_1280.jpg',
+                h4:'海尔吸尘器家用小型手持式强力大吸力功率静音地毯小米粒除螨机',
+                span:"￥599.00",
+                p:'销量11',
+                addr:'邦辰生活家电旗舰店'
+            },
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/53/53_06209892067528319_360.jpg',
+                h4:'海尔正品挂烫机家用蒸汽小型迷你手持电熨斗立式大功率烫衣服神器',
+                span:"￥499.00",
+                p:'销量0',
+                addr:'自营'
+            },
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/53/53_06209888174408452_360.jpg',
+                h4:'Haier/海尔 HRC-WFS3021A家用电饭煲智能预约3L迷你正品包邮2-5人',
+                span:"￥259.00",
+                p:'销量0',
+                addr:'自营'
+            },
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/53/53_06209884358646643_360.jpg',
+                h4:'海尔除螨虫神器家用床上吸尘除蝻仪手持小型床铺紫外线杀菌机宿舍',
+                span:"￥198.80",
+                p:'销量12',
+                addr:'自营'
+            },
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/53/53_06209332845559586_360.jpg',
+                h4:'海尔吸尘器家用小型手持式推杆大吸力静音强力大功率吸小狗毛地毯',
+                span:"￥199",
+                p:'销量18',
+                addr:'自营'
+            },
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/53/53_06179722935293939_360.jpg',
+                h4:'海尔微波炉蒸烤箱一体机家用多功能全自动新款智能平板式正品特价',
+                span:"￥798.80",
+                p:'销量365',
+                addr:'自营'
+            },
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/53/53_06179716727357069_360.jpg',
+                h4:'海尔微波炉家用小型迷你全自动多功能新款智能平板式正品特价20L',
+                span:"￥499",
+                p:'销量89',
+                addr:'自营'
+            },
+           
+        ]
+    }else if(id=='海尔销'){
+        arr = [
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/53/53_06179722935293939_360.jpg',
+                h4:'海尔微波炉蒸烤箱一体机家用多功能全自动新款智能平板式正品特价',
+                span:"￥798.80",
+                p:'销量365',
+                addr:'自营'
+            },
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/53/53_06179716727357069_360.jpg',
+                h4:'海尔微波炉家用小型迷你全自动多功能新款智能平板式正品特价20L',
+                span:"￥499",
+                p:'销量89',
+                addr:'自营'
+            },
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/53/53_06209332845559586_360.jpg',
+                h4:'海尔吸尘器家用小型手持式推杆大吸力静音强力大功率吸小狗毛地毯',
+                span:"￥199",
+                p:'销量18',
+                addr:'自营'
+            },
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/53/53_06209884358646643_360.jpg',
+                h4:'海尔除螨虫神器家用床上吸尘除蝻仪手持小型床铺紫外线杀菌机宿舍',
+                span:"￥198.80",
+                p:'销量12',
+                addr:'自营'
+            },
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/75/75_06178186750074442_1280.jpg',
+                h4:'海尔吸尘器家用小型手持式强力大吸力功率静音地毯小米粒除螨机',
+                span:"￥599.00",
+                p:'销量11',
+                addr:'邦辰生活家电旗舰店'
+            },
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/53/53_06209892067528319_360.jpg',
+                h4:'海尔正品挂烫机家用蒸汽小型迷你手持电熨斗立式大功率烫衣服神器',
+                span:"￥499.00",
+                p:'销量0',
+                addr:'自营'
+            },
+            { 
+                img:'https://www.taokubuy.com/data/upload/shop/store/goods/53/53_06209888174408452_360.jpg',
+                h4:'Haier/海尔 HRC-WFS3021A家用电饭煲智能预约3L迷你正品包邮2-5人',
+                span:"￥259.00",
+                p:'销量0',
+                addr:'自营'
+            },
+        
+        ]
     }
     res.send(arr);
 });

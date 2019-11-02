@@ -1,5 +1,6 @@
 <template>
   <div class="menu">
+    <div v-if="isShow">
     <div class="shang">
       <input class="inp" type="checkbox" checked />
       <h1>皇家龙船红酒专卖店</h1>
@@ -12,7 +13,7 @@
         </span>
         <p>{{item.p}}</p>
         <h2>{{item.h2}}</h2>
-        <div class="cross">
+        <div class="cross" @click="isShow=!isShow">
           <a href="javascript:void(0)">删除</a>
         </div>
         <div class="you">
@@ -28,6 +29,7 @@
         </div>
       </li>
     </ul>
+    </div>
     <carlogin></carlogin>
     <router-link tag="li" to="/car">
       <img class="hui" src="../../../assets/箭头.png" alt />
@@ -43,7 +45,8 @@ export default {
   },
   data() {
     return {
-      sbg: []
+      sbg: [],
+      isShow:true
     };
   },
   async created() {

@@ -70,7 +70,7 @@ export default {
     height: 1200px;
   }
   ul {
-    height: 2000px;
+    height: 1500px;
     li {
       width: 750px;
       height: 300px;

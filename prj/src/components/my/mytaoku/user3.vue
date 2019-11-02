@@ -2,7 +2,7 @@
   <div class="cen-four">
     <div class="three-four">
       <a class="top-a">
-        <h3>
+        <h3 @click="tiao()">
           <i class="iconfont icon-bangzhuzhongxin"></i>
           <span>帮助</span>
         </h3>
@@ -13,6 +13,15 @@
     </div>
   </div>
 </template> 
+<script>
+export default {
+  methods:{
+    tiao(){
+      this.$router.push("/help")
+    }
+  }
+}
+</script>
 <style lang="less" scoped>
 .cen-four {
   margin-top: 20px;
