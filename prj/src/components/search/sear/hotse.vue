@@ -1,11 +1,11 @@
 <template>
   <div class="hotse">
     <h1>热门搜索</h1>
-    <router-link tag="li" to="/search/jiu" @click.native="hot('无线充')">
-      <mt-button type="default">无线冲</mt-button>
+    <router-link tag="li" to="/search/jiu" @click.native="hot('海尔')">
+      <mt-button type="default">海尔</mt-button>
     </router-link>
-    <router-link tag="li" to="/search/jiu" @click.native="hot('衣服')">
-      <mt-button type="default">衣服</mt-button>
+    <router-link tag="li" to="/search/jiu" @click.native="hot('无线充')">
+      <mt-button type="default">无线充</mt-button>
     </router-link>
   </div>
 </template>
