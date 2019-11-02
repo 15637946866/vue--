@@ -9,8 +9,7 @@ export function getsort(){
 export function getbrand(id){
     return axios.get('sortlist/brand?id='+id)
 }
-// //右边标题
-export function gettitle(){
-    return axios.get('sortlist/title')
+export function getlistone(con){
+    return axios.get('sortlist/listone?id='+con)
 }
 

@@ -6,7 +6,8 @@ var store=new Vuex.Store({
     state:{
         count:[],
         cone:'',
-        data:null
+        data:null,
+        sortdata:null
     },
        //mutations的函数不能加异步代码，函数
     mutations:{
@@ -23,6 +24,10 @@ var store=new Vuex.Store({
         },
         clear:(state)=>{
             state.count=[]
+        },
+        sort:(state,n)=>{
+            state.sortdata=n
+           
         }
     },
     getters: {

@@ -2,7 +2,7 @@
   <div class="menu">
     <div class="shang">
       <input class="inp" type="checkbox" checked />
-      <h1>上面</h1>
+      <h1>皇家龙船红酒专卖店</h1>
     </div>
     <ul>
       <li v-for="(item,index) in sbg" :key="index">
@@ -17,17 +17,18 @@
         </div>
         <div class="you">
           <span class="you-1">
-            <a href="#">-</a>
+            <a href="javascript:void(0)">-</a>
           </span>
           <span class="you-2">
-            <input type="text" value="1"/>
+            <input type="text" value="1" />
           </span>
           <span class="you-3">
-            <a href="#">+</a>
+            <a href="javascript:void(0)">+</a>
           </span>
         </div>
       </li>
     </ul>
+    <carlogin></carlogin>
     <router-link tag="li" to="/car">
       <img class="hui" src="../../../assets/箭头.png" alt />
     </router-link>
@@ -35,7 +36,11 @@
 </template>
 <script>
 import { getSbg } from "../../../api/car.js";
+import carlogin from "./carlogin.vue";
 export default {
+  components: {
+    carlogin
+  },
   data() {
     return {
       sbg: []
@@ -50,13 +55,14 @@ export default {
 </script>
 <style lang="less" scoped>
 .menu {
-  overflow-y: auto;
+  // overflow-y: auto;
   position: absolute;
   left: 0;
   top: 88px;
   background-color: white;
   width: 100%;
   height: 1000px;
+  z-index: 9;
   .hui {
     position: absolute;
     left: 0;
@@ -152,29 +158,30 @@ export default {
         top: 110px;
       }
       .you {
-        width: 170px;
+        width: 180px;
         height: 54px;
         // border: 1px solid #000;
         position: absolute;
-        top: 200px;
-        right: 20px;
-
+        top: 210px;
+        left: 350px;
         span {
-          //   display: block;
+          // display: block;
           border: 1px solid #ccc;
           width: 54px;
           height: 100%;
           display: inline-block;
           vertical-align: top;
           line-height: 100%;
-          a{
-              margin-left: 18px;
-              font-size: 30px;
-              margin-top: 10px;
+          margin-left: 2px;
+
+          a {
+            margin-left: 18px;
+            font-size: 30px;
+            margin-top: 10px;
           }
-          input{
-              margin-left: 18px;
-               margin-top: 8px;
+          input {
+            margin-left: 20px;
+            margin-top: 8px;
           }
         }
       }

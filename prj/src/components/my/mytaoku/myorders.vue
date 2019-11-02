@@ -1,8 +1,9 @@
 <template>
   <div class="cen-one">
     <div class="one-top">
-      <a   class="top-a">
-        <h3>
+       <router-view></router-view>
+      <router-link tag="li" to=/froms  class="top-a">
+       <h3>
           <i class="iconfont icon-dingdan"></i>
           <span>我的订单</span>
         </h3>
@@ -10,7 +11,8 @@
           <span>查看全部订单</span>
           <i class="iconfont icon-pc-you"></i>
         </h5>
-      </a>
+        </router-link>
+    
     </div>
     <div class="one-buttom">
       <ul>

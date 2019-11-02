@@ -7,13 +7,11 @@ import car from '../components/car/car.vue'
 import search from '../components/search/search.vue'
 import jiu from '../components/search/sear/jiu.vue'
 import result from '../components/search/sear/result.vue'
-
 import log from '../components/my/mytaoku/log.vue'
 import sign from '../components/my/mytaoku/sign.vue'
-
 import data from '../components/home/components/data.vue'
 import sbgg from '../components/car/compnents/sbgg'
-
+import listone from '../components/sort/comment/listone.vue'
 Vue.use(VueRouter)
 let routes = [{
         path: '/',
@@ -36,15 +34,14 @@ let routes = [{
         component:sort,
         meta:{
             title:'分类'
-        }
+        },
+      
     },
     {
-        path: '/sort',
-        component: sort,
-        meta: {
-            title: '分类'
-        }
+        path: '/listone',
+            component: listone,
     },
+    
     {
         path: '/my',
         component: my,
@@ -60,6 +57,10 @@ let routes = [{
             component: sign,
 
         }]
+    },
+    {
+        path: '/froms',
+        component: froms,
     },
     {
         path: '/search',
