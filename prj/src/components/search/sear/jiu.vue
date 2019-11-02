@@ -12,7 +12,7 @@
          </router-link>
       </div>
       <ul v-else>
-        <li v-for="(item,index) in data" :key="index">
+        <li v-for="(item,index) in data" :key="index" @click="datas()">
           <img :src="item.img" alt />
           <h4>{{item.h4}}</h4>
           <span>{{item.span}}</span>
@@ -42,8 +42,10 @@ export default {
   components: {
     sales
   },
-  created() {
-    
+  methods:{
+    async datas(){  
+         this.$router.push('/home/data')
+      }
   },
   computed: {
     ...mapState([
@@ -55,9 +57,7 @@ export default {
       'isShow'
     ])
   },
- beforeUpdate(){
-   window.console.log(this.sortdata)
- },
+ 
   mounted() {
     this.$nextTick(() => {
       this.bs = new BScroll(".wrapper", {
