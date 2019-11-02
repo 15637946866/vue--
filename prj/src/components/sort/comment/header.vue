@@ -6,30 +6,32 @@
 
     <div class="big">
       <img src="../images/big.png" alt />
+      <router-link tag="li" to="/search">
       <input placeholder="请输入关键字" type="text" />
+      </router-link>
     </div>
 
     <i @click="isshow=!isshow" class="iconfont icon-caidan"></i>
     <div class="list" v-if="isshow">
       <ul>
-        <li>
+        <router-link tag="li" to="/home">
           <b class="iconfont icon-shouye"></b>首页
-        </li>
-        <li>
-          <b class="iconfont icon-sousuo"></b>收索
-        </li>
-        <li>
+        </router-link>
+        <router-link tag="li" to="/search">
+          <b class="iconfont icon-sousuo"></b>搜索
+        </router-link>
+        <router-link tag="li" to="/sort">
           <b class="iconfont icon-leimupinleifenleileibie"></b>分类
-        </li>
-        <li>
+        </router-link>
+         <router-link tag="li" to="/log">
           <b class="iconfont icon-xiaoxi"></b>消息
-        </li>
-        <li>
+        </router-link>
+         <router-link tag="li" to="/car">
           <b class="iconfont icon-gouwuche1"></b>购物车
-        </li>
-        <li>
+         </router-link>
+        <router-link tag="li" to="/my">
           <b class="iconfont icon-wode"></b>我的商城
-        </li>
+        </router-link>
       </ul>
     </div>
   </div>
