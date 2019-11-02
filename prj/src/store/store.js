@@ -11,8 +11,12 @@ var store=new Vuex.Store({
        //mutations的函数不能加异步代码，函数
     mutations:{
         add:(state,n)=>{
-            state.count.push(n)
-            state.cone=n
+            state.cone=n;
+            if(n!=''){   
+                if(state.count.indexOf(n)==-1){
+                    state.count.push(n)
+                }
+            } 
         },
         sub:(state,n)=>{
             state.data=n

@@ -4,7 +4,7 @@
 
     <div class="wrapper">
       <div class="kong" v-if="isShow">
-        <img src="../../../assets/搜索--1.png" alt="">
+        <img class="wu" src="../../../assets/搜索--1.png" alt="">
         <h1>没有找到任何相关信息</h1>
         <p>选择或搜索其它商品分类/名称...</p>
          <router-link  tag="li" to='/search' >
@@ -65,8 +65,30 @@ export default {
 <style lang="less" scoped>
 .kong {
   position: absolute;
-  top: 170px;
-  left: 200px;
+  top: 270px;
+  left: 100px;
+  width: 600px;
+  height: 600px;
+  .wu{
+    width: 200px;
+    height: 200px;
+    margin-left: 160px;
+  }
+  h1{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: 100px;
+  }
+  p{
+    margin-left: 100px;
+  }
+  button{
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    margin-left: 150px;
+    margin-top: 30px;
+  }
 }
 .wrapper {
   position: absolute;

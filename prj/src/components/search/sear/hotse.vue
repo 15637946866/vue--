@@ -5,7 +5,7 @@
       <mt-button type="default">无线冲</mt-button>
     </router-link>
     <router-link tag="li" to="/search/jiu" @click.native="hot('衣服')">
-      <mt-button type="default">登山表</mt-button>
+      <mt-button type="default">衣服</mt-button>
     </router-link>
   </div>
 </template>
