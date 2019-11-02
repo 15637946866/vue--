@@ -6,6 +6,7 @@ import my from '../components/my/my.vue'
 import car from '../components/car/car.vue'
 import search from '../components/search/search.vue'
 import jiu from '../components/search/sear/jiu.vue'
+
 import result from '../components/search/sear/result.vue'
 import log from '../components/my/mytaoku/log.vue'
 import sign from '../components/my/mytaoku/sign.vue'
@@ -93,8 +94,9 @@ let routes = [{
             children: [{
                 path: 'result',
                 component: result,
-
-            }]
+                },
+               
+        ]
         }]
     },
     {
